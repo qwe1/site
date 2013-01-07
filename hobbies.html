@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+</style>
+</head>
+
+<body>
+<script language="JavaScript"> 
+
+function makeArray() { 
+for (i = 0; i<makeArray.arguments.length; i++) 
+this[i + 1] = makeArray.arguments[i]; 
+} 
+var months = new makeArray('Ocak','Şubat','Mart','Nisan','Mayıs','Haziran', 'Temmuz','Ağustos','Eylül','Ekim','Kasım','Aralık'); 
+var date = new Date(); 
+var day = date.getDate(); 
+var month = date.getMonth() + 1; 
+var yy = date.getYear(); 
+var year = (yy < 1000) ? yy + 1900 : yy; 
+document.write(day + " " + months[month] + " " + year); 
+
+</script>
+<table width="315" border="0" align="center">
+  <tr>
+    <td width="74" align="center"><a href="home.html">Home</a></td>
+    <td width="81" align="center"><a href="hobbies.html">Hobbies</a></td>
+    <td width="56" align="center"><a href="izmir.html">Izmir</a></td>
+    <td width="76" align="center"><a href="communication.html">Communication</a></td>
+  </tr>
+</table>
+<table width="608" border="0" align="center">
+  <tr>
+    <td width="598"><p> HOBBIES<br />
+    </p>
+      <p> Everybody has different hobbies. My hobbies are playing ping pong,reading newspaper and taking part in theatre. Ping pong is a sport so it provides a healthy life,theatre is necessary for social life and newspaper is for following daily news.I am playing ping pong for 7 seven years. I learned ,how to play ping pong with experienced coaches and now I have a licence about it.Taking part in theatre for 5 years except last year. I started it which year I started high school.People need to relax,have fun,be social and can speak in front of other people. Theatre is the best way for them.Reading newspaper is the best way for me. I am living in Bornova and going 5 days of a week to Buca. I am reading newspaper while i am going or returning.</p>
+      <p>&nbsp;</p></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>
